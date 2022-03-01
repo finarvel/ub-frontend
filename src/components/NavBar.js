@@ -3,10 +3,20 @@ import {Link} from "react-router-dom"
 
 function NavBar(){
     return(
-        <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/contact-us">Contact us</Link></li>
-        </ul>
+        <nav>
+            <ul data-visible="false" className="primary-navigation flex">
+                <li className="active">
+                <Link to="/">
+                   <span>Home</span> 
+                </Link>
+                </li>
+                <li >
+                <Link to="/contact-us">
+                    <span>Contact Us</span>
+                </Link>
+                </li>
+            </ul>
+        </nav>
     )
 }
 
